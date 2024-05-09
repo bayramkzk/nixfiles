@@ -88,7 +88,6 @@
   };
 
   environment.systemPackages = with pkgs; [
-    neovim
     wget
     git
     stow
@@ -122,6 +121,11 @@
     enable = true;
     enableNvidiaPatches = true;
     xwayland.enable = true;
+  };
+
+  programs.neovim = {
+    enable = true;
+    vimAlias = true;
   };
 
   system.stateVersion = "23.11";

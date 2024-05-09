@@ -26,8 +26,8 @@
     ranger
     pyenv
     alejandra
-    neovim
     python3
+    gcc
 
     kitty
     alacritty
@@ -55,8 +55,8 @@
     syntaxHighlighting.enable = true;
     shellAliases = {
       ll = "ls -l";
-      rebuild = "sudo nixos-rebuild switch --flake ~/Nixfiles/";
-      rebuildhome = "home-manager switch --flake ~/Nixfiles/";
+      rebuild = "sudo nixos-rebuild switch --flake path:$HOME/Nixfiles";
+      rebuildhome = "home-manager switch --flake path:$HOME/Nixfiles";
     };
     oh-my-zsh = {
       enable = true;
