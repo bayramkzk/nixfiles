@@ -28,6 +28,9 @@
     alejandra
     python3
     gcc
+    tldr
+    acpi
+    pandoc
 
     kitty
     alacritty
@@ -37,14 +40,18 @@
     cliphist
     xsettingsd
     darkman
-    papirus-icon-theme
     pavucontrol
     nwg-look
+    nextcloud-client
+    flameshot
+    cloudflared
 
     firefox
     discord
     prismlauncher
     jdk21
+    remmina
+    gimp
   ];
 
   programs.home-manager.enable = true;
