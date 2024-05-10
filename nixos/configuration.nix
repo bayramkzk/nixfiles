@@ -66,7 +66,6 @@
   services.xserver.libinput.enable = true;
 
   environment.variables = {
-    "EDITOR" = "nvim";
     "GTK_USE_PORTAL" = "1";
   };
 
@@ -91,7 +90,6 @@
     trash-cli
     pulseaudio
     libnotify
-    home-manager
     wireguard-tools
     killall
   ];
@@ -122,6 +120,7 @@
   programs.neovim = {
     enable = true;
     vimAlias = true;
+    defaultEditor = true;
   };
 
   system.stateVersion = "23.11";
