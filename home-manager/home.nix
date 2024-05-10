@@ -11,6 +11,29 @@
     };
   };
 
+  gtk = {
+    enable = true;
+    font.name = "Noto Sans Condensed Medium";
+    iconTheme = {
+      name = "Papirus-Light";
+      package = pkgs.papirus-icon-theme;
+    };
+    theme = {
+      name = "adw-gtk3";
+      package = pkgs.adw-gtk3;
+    };
+  };
+
+  qt = {
+    enable = true;
+    platformTheme = "gtk3";
+  };
+
+  xdg.userDirs = {
+    enable = true;
+    createDirectories = true;
+  };
+
   home = {
     username = "barry";
     homeDirectory = "/home/barry";
