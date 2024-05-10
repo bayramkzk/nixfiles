@@ -101,6 +101,19 @@
     userEmail = "48856944+bayramkzk@users.noreply.github.com";
   };
 
+  programs.alacritty = {
+    enable = true;
+    settings = {
+      font = {
+        size = 14;
+        normal = {
+          family = "Iosevka Nerd Font";
+          style = "Regular";
+        };
+      };
+    };
+  };
+
   systemd.user.startServices = "sd-switch";
 
   home.stateVersion = "23.11";
