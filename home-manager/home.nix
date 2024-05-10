@@ -81,8 +81,8 @@
     syntaxHighlighting.enable = true;
     shellAliases = {
       ll = "ls -l";
-      rebuild = "sudo nixos-rebuild switch --flake path:$HOME/Nixfiles";
-      rebuildhome = "home-manager switch --flake path:$HOME/Nixfiles";
+      switchnix = "sudo nixos-rebuild switch --flake path:$HOME/Nixfiles";
+      switchhome = "home-manager switch --flake path:$HOME/Nixfiles";
     };
     oh-my-zsh = {
       enable = true;
